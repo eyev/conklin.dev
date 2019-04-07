@@ -1,0 +1,16 @@
+input[type="text"],
+input[type="email"],
+textarea {
+  border: none;
+  border-bottom: 1px solid $primary;
+  color: $primary;
+  width: 100%;
+  margin-bottom: 1rem;
+  &:focus,
+  &:active {
+    border-bottom-color: $highlight;
+  }
+}
+label {
+  display: block;
+}
