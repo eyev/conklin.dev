@@ -1,0 +1,10 @@
+.button { 
+    background: $primary;
+    color: #fff;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border-radius: .2rem;
+    &:hover {
+        background: lighten($primary, 15%);
+    }
+}
