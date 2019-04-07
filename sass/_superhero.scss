@@ -1,0 +1,53 @@
+section.superhero {
+  position: relative;
+  z-index: 1;
+  padding: 7rem 0 3.5rem;
+  color: #fff;
+  @include breakpoint("sm") {
+    padding: 7rem 0 11rem;
+  }
+  @include breakpoint("md") {
+    padding: 7rem 0 15rem;
+  }
+  .container {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  p {
+    color: rgba(#fff, 0.6);
+    margin-bottom: 1rem;
+    max-width: 40rem;
+  }
+  .superhero-content {
+    width: 100%;
+    @include breakpoint("md") {
+      width: 70%;
+    }
+  }
+  .superhero-images {
+    display: none;
+    @include breakpoint("md") {
+      display: flex;
+      width: 30%;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    svg {
+      color: rgba(#fff, 0.4);
+      display: flex;
+      padding: 1rem;
+      font-size: 6rem;
+      transition: all 0.3s;
+      &:hover {
+        color: rgba(#fff, 0.6);
+        font-size: 8rem;
+      }
+    }
+  }
+}
