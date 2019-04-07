@@ -1,0 +1,89 @@
+.projects {
+  position: relative;
+  margin-top: 0;
+  background: #f2eff9;
+  @include breakpoint("md") {
+    margin-top: 5rem;
+  }
+  .project {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    &:last-child {
+      border: none;
+    }
+  }
+  .container {
+    position: relative;
+    top: -3rem;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 20rem;
+    top: -4rem;
+    transform: skewY(7deg);
+    background: #f2eff9;
+    @include breakpoint("md") {
+      top: -10rem;
+    }
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    span {
+      margin-right: 1rem;
+      &.badge {
+        border-radius: 0.25rem;
+        background: $highlight;
+        font-size: 0.6rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        color: rgba(255, 255, 255, 0.85);
+        padding: 0.25rem;
+        margin-left: 1rem;
+        text-transform: uppercase;
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        @include breakpoint("md") {
+          margin-top: 0;
+        }
+      }
+    }
+    a {
+      margin-right: 1rem;
+    }
+    @include breakpoint("md") {
+      flex-direction: row;
+    }
+  }
+  ul {
+    display: flex;
+    color: $highlight;
+    flex-wrap: wrap;
+    font-weight: 300;
+    padding: 1rem;
+    @include breakpoint("md") {
+      padding: 0;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 1rem;
+      font-size: 1.75rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        color: darken($highlight, 15%);
+      }
+    }
+  }
+}
