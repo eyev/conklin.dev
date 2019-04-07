@@ -101,3 +101,22 @@ textarea,
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
+::-moz-selection { background:$highlight; color: #fff; }
+::selection { background: $highlight;color: #fff; }
+
+h2 { 
+  font-size: 2rem;
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: 1.5rem;
+}
+h3 { 
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $accent;
+  margin-bottom: 1rem;
+}
+
+P{
+  margin-bottom: 1rem;
+}
