@@ -1,11 +1,11 @@
 {
-  "name": "sass-starter",
+  "name": "stripe-layout",
   "version": "1.0.0",
-  "description": "A starter template for building websites using Sass.",
+  "description": "A simple demo on how to build a website similar to stripe.com",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass --include-path scss sass/style.scss css/style.css --output-style expanded && node-sass --include-path scss sass/style.scss css/style.min.css --output-style compressed && autoprefixer-cli -o css/style.css css/style.css && autoprefixer-cli -o css/style.min.css css/style.min.css",
-    "watch": "nodemon -e scss -x 'npm start'"
+    "start": "node-sass --include-path scss sass/style.scss dist/css/style.css --output-style expanded && node-sass --include-path scss sass/style.scss dist/css/style.min.css --output-style compressed && autoprefixer-cli -o dist/css/style.css dist/css/style.css && autoprefixer-cli -o dist/css/style.min.css dist/css/style.min.css",
+    "watch": "nodemon -e scss --exec npm start"
   },
   "keywords": [
     "css",
@@ -14,8 +14,8 @@
   "author": "Josh Wenning",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer-cli": "^1.0.0",
-    "node-sass": "^3.4.2",
-    "nodemon": "^1.8.1"
+    "autoprefixer-cli": "1.0.0",
+    "node-sass": "3.4.2",
+    "nodemon": "1.8.1"
   }
 }
