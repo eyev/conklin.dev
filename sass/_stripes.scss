@@ -1,0 +1,54 @@
+.stripes {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform: skewY(7deg);
+  transform: skewY(7deg);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+  background: linear-gradient(150deg, $primary, 15%, $secondary 60%, $accent 94%);
+  max-height: 600px;
+  box-shadow: $shadow-lg;
+  position: absolute;
+  @include breakpoint('lg') {
+      max-height: 700px;
+  }
+  > span { 
+      display: block;
+      position: absolute;
+  }
+  .stripe-1 {
+    height: 220px;
+    width: calc(100% / 2);
+    top: -1rem;
+    right: 0;
+
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.03);
+    background: linear-gradient(to left, rgba(255,255,255,.1) 0%,rgba(255,255,255,0) 80%);
+  }
+  .stripe-3 { 
+    left: 0;
+    width: 100%;
+    bottom: 9rem;
+    background: rgba(255,255,255,0.01);
+    height: .25rem;
+  }
+  .stripe-4 { 
+    left: 0;
+    width: 33.33333%;
+    width: calc(100% / 3);
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255,255,255,.1) 0%,rgba(255,255,255,0) 80%);
+    height: 9rem;
+  }
+  .stripe-5 { 
+    right: 0;
+    width: 33.33333%;
+    width: calc(100% / 3);
+    bottom: 9.25rem;
+    background: linear-gradient(to right, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 80%);
+    height: 7.5rem;
+    background: #2b1e3e;
+  }
+}

@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  padding: 1rem;
+  color: #fff;
+  width: 100%;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem .5rem 0;
+    margin-right: 1rem;
+    cursor: pointer;
+    background: linear-gradient(110deg, #fff 33%, $highlight 33%),
+      linear-gradient(110deg, $highlight 34%, $highlight 34%);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: logoHeaderInit ease .6s forwards;
+    &:hover {
+      animation: logoHeaderHover ease .6s forwards;
+    }
+  }
+}
+@keyframes logoHeaderInit { 
+    0% {
+        background-position: -50% 50%;
+      }
+      100% {
+        background-position: -0% 50%;
+      }
+}
+@keyframes logoHeaderHover {
+  0% {
+    background-position: -0% 50%;
+  }
+  100% {
+    background-position: -50% 50%;
+  }
+}
