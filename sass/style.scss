@@ -1,6 +1,14 @@
-// Theme
 @import "variables";
-
-// Reset
+@import "mixins";
 @import "normalize";
 @import "base";
+@import "structure";
+@import "buttons";
+@import "forms";
+@import "tooltip";
+@import "nav";
+@import "stripes";
+@import "superhero"; 
+@import "skills";
+@import "projects";
+@import "contact";
