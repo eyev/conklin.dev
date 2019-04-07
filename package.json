@@ -11,11 +11,11 @@
     "css",
     "sass"
   ],
-  "author": "Josh Wenning",
+  "author": "Justin Conklin",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer-cli": "1.0.0",
-    "node-sass": "3.4.2",
+    "node-sass": "4.11.0",
     "nodemon": "1.8.1"
   }
 }
