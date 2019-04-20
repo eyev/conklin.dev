@@ -81,6 +81,31 @@
       font-size: 1.75rem;
       cursor: pointer;
       transition: all 0.3s;
+      &.pwa {
+        i { 
+          width: 1.75rem;
+          background-image: url(/images/pwa.svg);
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &:hover i { 
+          background-image: url(/images/pwa-hover.svg);
+        }
+      }
+      &.bulma {
+        i { 
+          width: 1.75rem;
+          background-image: url(/images/bulma.svg);
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &:hover i { 
+          background-image: url(/images/bulma-hover.svg);
+        }
+      }
+      
       &:hover {
         color: darken($highlight, 15%);
       }

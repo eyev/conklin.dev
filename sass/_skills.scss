@@ -26,6 +26,30 @@ section.skills {
       cursor: pointer;
       transition: all 0.3s;
       background: rgba($highlight, 0.15);
+      &.pwa {
+        i { 
+          background-image: url(/images/pwa.svg);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &:hover i { 
+          background-image: url(/images/pwa-hover.svg);
+        }
+      }
+      &.bulma {
+        i { 
+          background-image: url(/images/bulma.svg);
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat; 
+          background-position: center;
+        }
+        &:hover i { 
+          background-image: url(/images/bulma-hover.svg);
+        }
+      }
       &:hover {
         color: darken($highlight, 15%);
       }
